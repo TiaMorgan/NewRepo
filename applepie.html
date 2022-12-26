@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Bethany's Pie Shop</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    
+
+<script>
+function save() {
+    localStorage.setItem("applepie", true);
+}
+window.onload = function() {
+    var favorite = document.getElementById('favorite');
+    if(window.localStorage) {
+        var storage = window.localStorage;
+        if(storage.getItem('applepie')== 'true') {
+            Favorite.innerHTML = "Apple Pie Is One Of Our Favorites"   
+        }
+    }
+}
+</script>
+<!--[if it ie 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+
+    
+</head>
+<body background="images/pattern.png">
+    <header id="mainheader">
+<nav>
+    <ul>
+        <li><img src="images/cake.svg" height="55" alt="Green Pie Logo"/></li> 
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="pieoverview.html">All Pies</a></li> 
+        <li><a href="index.html#promos">Promotions</a></li>
+        <li><a href="peachpie.html">Popular Peach Pie</a></li>
+        
+     </ul>
+  
+</nav>
+    </header>
+    <div style="width: 1000px;margin-left: auto;margin-right: auto;">
+<aside id="leftmenu">
+    <a href="index.html"><img src="images/bethanylogo.png"alt="Bethany's logo"/></a>
+<header>
+    <h3 style="text-align: center;">Browse Our Pies</h3>
+    <ul>
+        <li><a href="pieoverview.html">All Pies</a></li><br>
+        <li><a href="peachpie.html">Popular Peach Pie</a></li><br>
+        <li><a href="index.html#promos">Promotions</a></li><br>
+        
+    </ul>
+    <input type="search" class="searchbox" placeholder="search our store🔍"/><br>
+    <br>
+
+    <iframe width="250" height="200" src="https://www.youtube.com/embed/PjzXjoHE0y4" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+   gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</aside>
+
+
+
+<main id="main">
+    <header>
+        <h1 style="font-size: 35px; color:rgb(15, 133, 135)">Apple Pie</h1>
+</header>
+    <figure>
+    <img src="images/products/applepie.jpg" width="600" alt="Apple Pie">
+    <figcaption>Our World-Famous Apple Pie</figcaption>
+</figure>
+
+<P>
+    <button onclick="save()" type="button">Save as Favorite</button>
+    <span id="Favorite"></span>
+</P>
+
+<div style="background-color:darkgoldenrod;">
+    <strong>Price: $14.95</strong>
+<h2>Description</h2>
+<p>
+    Bethany received the receipe for this delicious apple pie from her grandmother. At the age of 5, she
+     was already baking this <em> all-American traditional apple pie </em> at her home. As the recipe goes a long 
+     way back, it contains the most typical ingredients used for so many years to make this classic even 
+     today one of our most popular pies.
+</p>
+<p>
+    This pie is availabe <strong>every day</strong> and comes in 2 sizes.
+    <span style="color:bisque; font-weight:bold;">
+        You can serve it cold or warm it for 4 minutes in
+        the microwave to give it an extra touch.</span>Your house will smell just like Bethany's Shop!
+    </p>
+    <blockquote>
+        This recipe has been in our family for generations.
+        We hope you enjoy this pie as we do - Bethany
+    </blockquote>
+<p><small>Note that some ingredients may be dangerous if you have certain allergies. See the list of ingridents below.</small></p>
+<p><small>Bethany cares about the environment and we try to limit our CO2 emissions as much as possible. See our terms page for more info.</small></p>
+
+<hr>
+
+  <h2>How did we make this pie</h2> 
+<ol>
+    <li>
+        First, we combine sugar, flour and spices. We toss the apples with some lemon juice and add sugar.   
+    </li><br>
+    <li>
+        We then create the bottom crust and fill that with apple mixture. 
+        We put some butter on that. We then roll remaining crust to fit top of pie.  
+    </li><br>
+    <li>
+        Then we beat the eggs white until we have a foamy mix. 
+        That is then brushed over the crust. We sprinkle some extra sugar.  
+    </li><br>
+    <li>
+        Then the pie goes into the oven at 360° for 35 minutes. When ready, we let it cool on a wire rack.  
+    </li><br>
+    <li>
+        If something goes wrong, we start all over again!
+    </li>
+</ol>
+   <h3>Ingridents</h3>
+<ul>
+    <li>Butter</li>
+    <li>Eggs</li>
+    <li>Sugar</li>
+    <ul>
+        <li>Regular Sugar</li>
+        <li>Brown Sugar</li>
+        <li>Caster Sugar</li>
+    </ul>
+    <li>Flour</li>
+    <li>Cinnamon</li>
+    <li>Ginger</li>
+    <li>Nutmeg</li>
+    <li>Apples</li>
+    <li>Lemons</li>
+</ul>
+</div>
+</main>
+<footer>
+    <p>Our address is <address>Bethany's Pie Shop - Bakery Street Brussels Belgium</address></p>
+    <p>Contact us via <a href="mailto: info@bethanyspieshop.com">Email</a></p>
+    <small>&copy 2020 Bethany's Pie Shop - All rights reserved</small>
+    <p><small><a href="https://www.google.com/">Google Search Engine</a></small></p>
+    
+</footer>
+</footer>
+    </div>
+
+</body>
+</html>
